@@ -17,7 +17,7 @@ import prestige from "./layers/prestige";
 /**
  * @hidden
  */
-export const main = createLayer("main", function (this: BaseLayer) {
+export const main = createLayer("Practice", function (this: BaseLayer) {
     const points = createResource<DecimalSource>(10);
     const best = trackBest(points);
     const total = trackTotal(points);

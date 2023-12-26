@@ -16,11 +16,11 @@ import type { DecimalSource } from "util/bignum";
 import { render } from "util/vue";
 import { createLayerTreeNode, createResetButton } from "../common";
 
-const id = "p";
+const id = "pa";
 const layer = createLayer(id, function (this: BaseLayer) {
-    const name = "Prestige";
+    const name = "Prostige";
     const color = "#4BDC13";
-    const points = createResource<DecimalSource>(0, "prestige points");
+    const points = createResource<DecimalSource>(0, "prostige points");
 
     const conversion = createCumulativeConversion(() => ({
         formula: x => x.div(10).sqrt(),
